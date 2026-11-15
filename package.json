@@ -1,0 +1,15 @@
+{
+  "name": "ego-futsal-3d",
+  "version": "1.0.0",
+  "description": "Ego Futsal 3D online server",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  }
+}
