@@ -1,15 +1,22 @@
 {
-  "name": "ego-futsal-3d",
-  "version": "1.0.0",
-  "description": "Ego Futsal 3D online server",
+  "name": "ego-futsal-server",
+  "version": "2.0.0",
+  "description": "Máy chủ Ego Futsal cho Render: phục vụ game, sảnh online, hàng chờ ghép cặp, trận đấu vật lý do server quyết định và phòng relay mã PIN.",
+  "private": true,
+  "license": "UNLICENSED",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node --max-old-space-size=384 server.js",
+    "dev": "node --watch server.js",
+    "test": "node test/smoke.js"
   },
   "engines": {
-    "node": ">=18"
+    "node": ">=20"
   },
   "dependencies": {
     "ws": "^8.18.0"
+  },
+  "optionalDependencies": {
+    "bufferutil": "^4.0.8"
   }
 }
